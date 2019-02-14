@@ -1,1 +1,1 @@
-# styled-playlist
+# Styled-Playlist

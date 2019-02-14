@@ -1,0 +1,25 @@
+<table class="ui fixed red inverted table">
+  <thead>
+    <tr>
+      <th>Song</th>
+      <th>Artist</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each playlist.songs}}
+      <tr>
+        <td>
+          {{title}}
+        </td>
+        <td>
+          {{artist}}
+        </td>
+        <td>
+          <a href="/playlist/{{../playlist.id}}/deletesong/{{id}}" id="delsong" ><i class="large trash icon"></i></a>
+        </td>
+      
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
