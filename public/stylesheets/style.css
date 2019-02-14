@@ -1,0 +1,12 @@
+body {
+  background-color:lightblue;
+}
+
+.ui.table thead th {
+  background-color:navy;
+  color:white;
+}
+  
+tbody tr:hover{
+ font-style:italic;
+}
