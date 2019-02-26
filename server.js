@@ -13,15 +13,6 @@ app.use(express.static('public'));
 app.engine('.hbs', exphbs({
   extname: '.hbs',
   defaultLayout: 'main',
-  helpers: {
-    CalculateDuration: function (songs) {
-       let total=0;
-       for (let i in songs) {
-          total+=songs[i].duration;
-       }
-       return total + ' mins';
-    }
-  }
 }));
 app.set('view engine', '.hbs');
 
